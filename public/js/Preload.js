@@ -17,7 +17,7 @@ Bomberman.Preload.prototype = {
 
     // Yoyo the text
     this.textFade = this.game.add.tween(this.text).
-      to({alpha: 1}, 0, "Linear", true, 1000, -1);
+      to({alpha: 1}, 500, "Linear", true, 0, -1);
 
     this.textFade.yoyo(true, 300);
 
