@@ -5,13 +5,14 @@ Bomberman.game = new Phaser.Game(600, 520, Phaser.AUTO, "");
 
 function init(){
   // Initialize States
+  Bomberman.game.state.add('Boot', Bomberman.Boot);
   Bomberman.game.state.add('Preload', Bomberman.Preload);
   Bomberman.game.state.add('Menu', Bomberman.Menu);
   Bomberman.game.state.add('Game', Bomberman.Game);
   Bomberman.game.state.add('End', Bomberman.End);
 
   // Start the game!
-  Bomberman.game.state.start('Preload');
+  Bomberman.game.state.start('Boot');
 }
 
 var konamiIdx = 0;
