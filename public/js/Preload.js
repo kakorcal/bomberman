@@ -4,6 +4,23 @@ Bomberman.Preload = function(){};
 
 Bomberman.Preload.prototype = {
   preload: function(){
+    // Preload text
+    this.text = this.game.add.text(
+        this.game.width/2,
+        this.game.height/2,
+        "LOADING...",
+        {font: "40px monospace", fill: "yellow", align: "center", strokeThickness: 5}
+    );
+    // Set relative to center, not top left
+    this.text.anchor.set(0.5);
+    this.text.alpha = 0;
+
+    // Yoyo the text
+    this.textFade = this.game.add.tween(this.text).
+      to({alpha: 1}, 0, "Linear", true, 1000, -1);
+
+    this.textFade.yoyo(true, 300);
+
     // JSON
     this.load.atlasJSONHash("sprites", "/public/assets/sprites/sprites.png", "/public/assets/sprites/sprites.json");
     this.load.tilemap("stage", "/public/assets/tilemaps/stage.json", null, Phaser.Tilemap.TILED_JSON);
