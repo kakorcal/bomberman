@@ -1,0 +1,47 @@
+html, body {
+  background-color: #1d1d1d;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+canvas, #instructions {
+  margin: 0 auto;
+  border: 1px solid #555;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.20);
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform:    translateY(-50%);
+  -ms-transform:     translateY(-50%);
+  -o-transform:      translateY(-50%);
+  transform:         translateY(-50%);
+}
+
+canvas {
+  left: 15%;
+}
+
+#instructions {
+  padding: 0 10px;
+  width: 250px;
+  height: 520px;
+  background: #1a1a1a;
+  color: white;
+  box-sizing: border-box;
+}
+
+#instructions {
+  left: 65%;
+}
+
+#endGameMessage {
+  display: none;
+}

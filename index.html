@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Bomberman</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/public/css/style.css">
 </head>
 <body>
-  <script src="js/phaser.js"></script>
-  <script src="js/Preload.js"></script>
-  <script src="js/Menu.js"></script>
+  <script src="/public/js/phaser.js"></script>
+  <script src="/public/js/Preload.js"></script>
+  <script src="/public/js/Menu.js"></script>
   <!--  
   <script src="js/Stage.js"></script>
   <script src="js/Player.js"></script>
@@ -16,10 +16,31 @@
   <script src="js/Flame.js"></script>
   <script src="js/Enemy.js"></script>
    -->
-  <script src="js/Game.js"></script>
-  <script src="js/End.js"></script>
-  <script src="js/Main.js"></script>
-  <audio id="start" src="assets/audio/startsong.mp3" loop oncanplaythrough="init()"></audio>
+  <script src="/public/js/Game.js"></script>
+  <script src="/public/js/End.js"></script>
+  <script src="/public/js/Main.js"></script>
+  <audio id="start" src="/public/assets/audio/startsong.mp3" loop oncanplaythrough="init()"></audio>
   <div id="endGameMessage"></div>
+  <div id='instructions'>
+    <h3>Players:</h3>
+    <ul>
+      <li>You: Bomberman</li>
+      <li>Enemy: creeper x 3</li>
+    </ul>
+    <h3>Rules:</h3>
+    <ul>
+      <li>Objective: Destroy the three creepers by exploding bombs near them</li>
+      <li>Win: All three enemies are destroyed</li>
+      <li>Lose: Get bombed by the creepers or by the bombs you've placed</li>
+    </ul>
+    <h3>Controls:</h3>
+    <ul>
+      <li>Arrow-up: Move up</li>
+      <li>Arrow-down: Move down</li>
+      <li>Arrow-right: Move right</li>
+      <li>Arrow-left: Move left</li>
+      <li>Spacebar: Drop bomb</li>
+    </ul>
+  </div>
 </body>
 </html>
