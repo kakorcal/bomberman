@@ -3,4 +3,4 @@
 
 VIEW LIVE: https://g22-bomberman.herokuapp.com/
 
-[gif](./example.gif)
+![gif](./example.gif)
